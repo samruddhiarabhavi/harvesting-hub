@@ -1,0 +1,77 @@
+{% extends "admin_header.html"  %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_Category</title>
+    <style>
+        body {
+            font-family:
+            margin: 20px;
+            background-image:url(static/add_cate.jpg)
+
+        }
+        form {
+            max-width: 400px;
+           margin: auto;
+            padding: 20px;
+           border: 1px solid #ccc;
+            border-radius: 8px;
+              box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 10px;
+           width: 400px;
+            height: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: white;
+            margin-bottom: 8px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 5px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .CANCEL
+        {
+         background: rgba(255, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+<form method="POST">
+    <h2>ADD CATEGORY</h2>
+    <label for="category-name">Category Name:</label>
+    <input type="text" id="cname" name="cname" placeholder="Enter category name" required>
+
+    <label for="sub-category-name">Sub-Category Name:</label>
+    <input type="text" id="scname" name="scname" placeholder="Enter sub-category name" required>
+
+    <label for="image">Image:</label>
+    <input type="file" id="image" name="cimage" accept="image/*" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="cdes" rows="4" placeholder="Enter description" required></textarea>
+
+    <button type="submit">Create Category</button><br><br>
+                <button type="submit" class="CANCEL">CANCEL</button>
+</form>
+
+</body>
+</html>
+{% endblock %}

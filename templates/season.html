@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+
+            /*color: #333;*/
+            text-align: center;
+            background-image: url(static/season.jpg)
+            /*background-size: cover*/
+
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .season {
+          background-color: #ffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 150px;
+            text-align: center;
+        }
+        .season img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .season h3 {
+            margin: 10px 0 5px;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seasons</h1>
+    </header>
+    <div class="container">
+        <div class="season">
+            <img src="static/img_4.png" alt="Snowy Season">
+            <h3>Snowy</h3>
+
+        </div>
+        <div class="season">
+            <img src="static/img_2.png" alt="Rainy Season">
+            <h3>Rainy</h3>
+
+        </div>
+        <div class="season">
+            <img src="static/summer.jpg" alt="Summer Season">
+            <h3>Summer</h3>
+
+        </div>
+        <div class="season">
+            <img src="static/winter1.jpg" alt="Windy Season">
+            <h3>Windy</h3>
+
+        </div>
+        <div class="season">
+            <img src="static/img_5.png" alt="Stormy Season">
+            <h3>Stormy</h3>
+
+        </div>
+        <div class="season">
+            <img src="static/img_3.png" alt="Sunny Season">
+            <h3>Sunny</h3>
+
+        </div>
+    </div>
+</body>
+</html>
